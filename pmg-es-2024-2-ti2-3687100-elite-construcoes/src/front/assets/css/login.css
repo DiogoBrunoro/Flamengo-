@@ -1,0 +1,111 @@
+.login-fornecedor{
+    background-image: url('../imagens/Imagem3.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    font-family: "Nunito", sans-serif;
+}
+
+.login-cliente{
+    background-image: url('../imagens/Imagem2.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    font-family: "Nunito", sans-serif;
+}
+
+/* Seção de login */
+#telaLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Restante do seu código CSS */
+.h1Login {
+    color: #ffa600e7;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+}
+
+/* Caixa que contém o formulário de login */
+.caixaLogin {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 40px;
+    width: 400px;
+    text-align: center;
+}
+
+/* Estilizando o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilizando os labels */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Estilizando os campos de input */
+form input[type="email"],
+form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #e6e6e6; /* Cinza-claro */
+    color: #333; /* Texto mais escuro */
+}
+
+/* Para melhorar a visibilidade quando o campo é selecionado */
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #ffa600; /* Cor de destaque na borda ao focar no campo */
+    background-color: #f0f0f0; /* Um cinza ainda mais claro ao focar */
+}
+
+/* Estilizando o botão de login */
+form button {
+    padding: 10px;
+    background-color: #ffa600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+/* Efeito ao passar o mouse no botão */
+form button:hover {
+    background-color: rgba(223, 145, 1, 0.938);
+}
+
+/* Link de voltar */
+form a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #ffa600;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse no link */
+form a:hover {
+    color: #df9101;
+    text-decoration: underline;
+}
+
+/* Remover a coloração de link visitado */
+form a:visited {
+    color: #ffa600;
+}

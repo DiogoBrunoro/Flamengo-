@@ -1,0 +1,134 @@
+
+
+/* Estilo geral do corpo */
+.cadastro-body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-image: url('../imagens/Imagem5.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Estilo do container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Altura total da tela */
+    color: #fff; /* Cor do texto */
+    /* Removido o margin-top para centralizar */
+}
+
+
+/* Estilo do botão para alternar cadastro */
+#toggleButton {
+    background-color: #fcbc47;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-alterarcadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggleButton:hover {
+    background-color: #df9101; /* Efeito de hover */
+}
+
+/* Estilização do formulário */
+form {
+    background-color: #fff; /* Fundo branco */
+    padding: 35px 40px;
+    border-radius: 40px; /* Arredondar os cantos */
+    width: 400px; /* Largura fixa do formulário */
+}
+
+/* Estilo dos títulos do formulário */
+h2 {
+    color: #ffa600e7; /* Cor do título do formulário */
+    font-weight: 900;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Estilizando os labels */
+form label {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    color: #000000; /* Cor dos labels */
+}
+
+/* Estilizando os campos de input */
+form input[type="text"],
+form input[type="date"],
+form input[type="password"] {
+    width: 100%; /* Largura total do campo */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 30px; /* Arredondar os cantos */
+    font-size: 16px;
+    background-color: #e6e6e6; /* Fundo cinza-claro */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para foco nos campos */
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="password"]:focus {
+    outline: none; /* Remove o contorno padrão */
+    border: 1px solid #ffa600; /* Borda em destaque */
+    background-color: #f0f0f0; /* Fundo mais claro */
+}
+
+/* Estilo para o botão de submit */
+form button[type="submit"] {
+    padding: 10px;
+    background-color: #ffa600; /* Cor do botão */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 30px; /* Arredondar os cantos */
+    width: 100%; /* Largura total do botão */
+}
+
+/* Efeito ao passar o mouse no botão de submit */
+form button[type="submit"]:hover {
+    background-color: #df9101; /* Efeito de hover */
+}
+
+/* Esconder campos de fornecedor */
+.hidden {
+    display: none; /* Mantém ocultos os campos */
+}
+
+.trocarCadastro{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-h2{
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: px;
+}

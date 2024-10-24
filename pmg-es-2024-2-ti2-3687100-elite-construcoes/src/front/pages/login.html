@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Cliente</title>
+    <link href="../assets/css/header.css" rel="stylesheet">
+    <link href="../assets/css/login.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/imagens/Elite-removebg-preview.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<header>
+    <div class="header-content">
+      <div class="logo-container">
+          <img src="../assets/imagens/Elite-removebg-preview.png" alt="" width="100px" height="150px">
+        <h1>ELITE CONSTRUÇÕES</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../pages/home.html">Home</a></li>
+          <li><a href="https://constructor-universe.com/projects">Projects</a></li>
+          <li><a href="https://constructor-universe.com/tools">Tools</a></li>
+          <li><a href="https://constructor-universe.com/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<body class="login-cliente">
+    <main>
+        <section id="telaLogin">
+            <div class="caixaLogin">
+                <form>
+                    <h1 class="h1Login">LOGIN</h1>
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" class="email" name="email" required><br>
+                    <label for="password">SENHA:</label>
+                    <input type="password" class="password" id="password" name="password" required><br>
+
+                    <button id="btn-login" type="submit">LOGAR</button>
+                    <a href="../pages/home.html">VOLTAR</a> 
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="../controller/login.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Construções</title>
+    <link rel="stylesheet" href="../assets/css/cadastro.css">
+    <link href="../assets/css/header.css" rel="stylesheet">
+    <link rel="icon" href="../assets/imagens/Elite-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <div class="header-content">
+      <div class="logo-container">
+          <img src="../assets/imagens/Elite-removebg-preview.png" alt="" width="100px" height="150px">
+        <h1>ELITE CONSTRUÇÕES</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../pages/home.html">Home</a></li>
+          <li><a href="https://constructor-universe.com/projects">Projects</a></li>
+          <li><a href="https://constructor-universe.com/tools">Tools</a></li>
+          <li><a href="https://constructor-universe.com/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <body class="cadastro-body">
+    <div class="container">
+      <button id="toggleButton" onclick="toggleCadastro()">Alterar para Cadastro de Fornecedor</button>
+      <form id="cadastroForm" novalidate>
+        <div class="titulo-h2">
+        <h2 id="formTitle" class="titulo-h2">CADASTRO DE PESSOA</h2>
+      </div>
+        <div class="botao-alterarcadastro">
+        </div>
+            <!-- Campos exclusivos para pessoas -->
+            <div id="pessoaFields">
+                <label for="nomeCompleto">NOME COMPLETO:</label>
+                <input type="text" class="nomeCompleto" name="nomeCompleto" required>
+                <label for="nomeUsuario">NOME DE USUÁRIO:</label>
+                <input type="text" class="nomeUsuario" name="nomeUsuario"  required>
+                <label for="dataNascimento">DATA DE NASCIMENTO:</label>
+                <input type="date" class="dataNascimento" name="dataNascimento" required>
+                <label for="email">EMAIL:</label>
+                <input type="text" class="email" name="email" required>
+                <label for="senhaPessoa">SENHA:</label>
+                <input type="password" class="senhaPessoa" name="senhaPessoa" required>
+                <label for="confirmarSenhaPessoa">CONFIRMAR SENHA:</label>
+                <input type="password" class="confirmarSenhaPessoa" name="confirmarSenhaPessoa" required>
+            </div>
+            <!-- Campos exclusivos para fornecedores -->
+            <div id="fornecedorFields" class="hidden">
+                <label for="nomeFornecedor">NOME DO FORNECEDOR:</label>
+                <input type="text" id="fornecedor" class = "nomeFornecedor" name="fornecedora">
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" class = "cnpj" name="cnpj">
+                <label for="endereco">ENDEREÇO:</label>
+                <input type="text" id="endereco" class = "endereco" name="endereco">
+                <label for="emailCorporativo">EMAIL CORPORATIVO:</label>
+                <input type="text" id="emailCorporativo" class = "emailCorporativo" name="emailCorporativo">
+                <label for="senhaFornecedor">SENHA:</label>
+                <input type="password" id="senhaFornecedor" class="senhaFornecedor" name="senhaFornecedor">
+                <label for="confirmarSenhaFornecedor">CONFIRMAR SENHA:</label>
+                <input type="password" id="confirmarSenhaFornecedor" name="confirmarSenhaFornecedor">
+            </div>
+            <button type="submit">CADASTRAR</button>
+    
+        </form>                   
+    </div>
+    <script src="../controller/cadastro.js"></script>
+</body>
+</html>
